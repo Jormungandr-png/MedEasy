@@ -1,0 +1,26 @@
+{
+  "id": "bfa26881-3eff-4ce5-a2e1-c1fbd18fc103",
+  "doctor_id": "25cd668c-6c2f-4a57-b958-7b2429f72d8c",
+  "full_name": "Rajesh Verma",
+  "age": 42,
+  "gender": "Male",
+  "phone": "+919876543210",
+  "blood_group": "B+",
+  "allergies": [
+    "Penicillin"
+  ],
+  "created_at": "2026-11-04T13:25:07.670594+00:00"
+}
+
+
+{
+  "doctor_id": "25cd668c-6c2f-4a57-b958-7b2429f72d8c",
+  "patient_id": "bfa26881-3eff-4ce5-a2e1-c1fbd18fc103",
+  "transcript": "Doctor: Hello Rajesh, what brings you in today? Patient: Doctor, I have had a severe throbbing headache on the right side of my head for two days. Bright light really hurts my eyes, and I feel like throwing up. Doctor: Any neck stiffness or fever? Patient: No, just the throbbing pain and nausea. Doctor: Blood pressure is 120/80, pulse 76, no neurological deficits. Looks like an acute migraine episode. Take Sumatriptan 50mg at onset and Naproxen 500mg twice daily after meals for 3 days. Rest in a dark, quiet room.",
+  "vitals": {
+    "bp": "120/80 mmHg",
+    "hr": "76 bpm",
+    "temp": "98.4 F",
+    "spo2": "99%"
+  }
+}
