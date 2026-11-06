@@ -9,7 +9,7 @@ from schemas import (
 )
 from llm_service import extract_soap_from_transcript
 
-app = FastAPI(title="MediScribe Production API", version="1.0.0")
+app = FastAPI(title="MedEasy Production API", version="1.0.0")
 
 app.add_middleware(
     CORSMiddleware,
@@ -21,7 +21,7 @@ app.add_middleware(
 
 @app.get("/")
 def root():
-    return {"message": "MediScribe Clinical AI API is running", "docs": "/docs"}
+    return {"message": "MedEasy Clinical AI API is running", "docs": "/docs"}
 
 @app.get("/health")
 def health_check():

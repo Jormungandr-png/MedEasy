@@ -112,7 +112,7 @@ export default function App() {
         id: user.id,
         full_name: extraMeta.full_name || user.user_metadata?.full_name || user.email.split('@')[0],
         specialty: extraMeta.specialty || user.user_metadata?.specialty || 'General Physician',
-        clinic_name: extraMeta.clinic_name || user.user_metadata?.clinic_name || 'MediScribe Clinic',
+        clinic_name: extraMeta.clinic_name || user.user_metadata?.clinic_name || 'MedEasy Clinic',
         medical_license_number: extraMeta.medical_license_number || user.user_metadata?.medical_license_number || 'VERIFIED'
       };
 
@@ -408,7 +408,7 @@ export default function App() {
             <div className="w-12 h-12 rounded-2xl bg-teal-600 flex items-center justify-center text-white shadow-md mb-3">
               <Stethoscope className="w-6 h-6" />
             </div>
-            <h1 className="text-xl font-bold text-slate-900">MediScribe AI</h1>
+            <h1 className="text-xl font-bold text-slate-900">MedEasy AI</h1>
             <p className="text-xs text-slate-500 mt-1">
               Ambient Clinical Scribe & Automated SOAP EHR Portal
             </p>
@@ -548,7 +548,7 @@ export default function App() {
           </div>
           <div>
             <div className="flex items-center gap-2">
-              <h1 className="font-bold text-base text-slate-900">MediScribe AI</h1>
+              <h1 className="font-bold text-base text-slate-900">MedEasy AI</h1>
               <span className="text-[11px] font-semibold px-2 py-0.5 rounded-full bg-teal-50 text-teal-700 border border-teal-200">
                 {doctorProfile?.clinic_name || 'Clinical Portal'}
               </span>

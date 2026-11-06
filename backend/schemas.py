@@ -7,7 +7,7 @@ class DoctorProfileCreate(BaseModel):
     full_name: str
     medical_license_number: Optional[str] = "PENDING"
     specialty: Optional[str] = "General Physician"
-    clinic_name: Optional[str] = "MediScribe Clinic"
+    clinic_name: Optional[str] = "MedEasy Clinic"
 
 # --- Patient Schemas ---
 class PatientCreate(BaseModel):

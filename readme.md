@@ -1,4 +1,4 @@
-# 🩺 MediScribe AI — Ambient Clinical Scribe & Automated SOAP EHR
+# 🩺 MedEasy AI — Ambient Clinical Scribe & Automated SOAP EHR
 
 An end-to-end, zero-cost medical AI web application that listens to doctor–patient conversations, automatically transcribes ambient audio, and generates structured, production-ready clinical **SOAP notes** (Subjective, Objective, Assessment, Plan) with ICD-10 diagnostic codes and prescription details.
 
