@@ -1,6 +1,14 @@
 from typing import List, Optional, Dict, Any
 from pydantic import BaseModel, Field
 
+# --- Doctor Profile Schema ---
+class DoctorProfileCreate(BaseModel):
+    id: str
+    full_name: str
+    medical_license_number: Optional[str] = "PENDING"
+    specialty: Optional[str] = "General Physician"
+    clinic_name: Optional[str] = "MediScribe Clinic"
+
 # --- Patient Schemas ---
 class PatientCreate(BaseModel):
     doctor_id: str
@@ -10,10 +18,6 @@ class PatientCreate(BaseModel):
     phone: Optional[str] = None
     blood_group: Optional[str] = None
     allergies: List[str] = []
-
-class PatientResponse(PatientCreate):
-    id: str
-    created_at: str
 
 # --- Clinical SOAP Schemas ---
 class MedicationOrder(BaseModel):
@@ -40,19 +44,17 @@ class SOAPNoteSchema(BaseModel):
     assessment: List[DiagnosisItem]
     plan: SOAPPlan
 
-# --- Encounter Request ---
+# --- Encounter Requests ---
 class GenerateSOAPRequest(BaseModel):
     doctor_id: str
     patient_id: str
     transcript: str
     vitals: Optional[Dict[str, Any]] = {"bp": "", "hr": "", "temp": "", "spo2": ""}
 
-
-# --- Encounter Update Schema ---
 class EncounterUpdate(BaseModel):
     chief_complaint: Optional[str] = None
     subjective: Optional[str] = None
     objective: Optional[str] = None
-    assessment: Optional[list] = None
-    plan: Optional[dict] = None
+    assessment: Optional[List[Dict[str, Any]]] = None
+    plan: Optional[Dict[str, Any]] = None
     doctor_signed: Optional[bool] = True

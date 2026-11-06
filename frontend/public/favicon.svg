@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64">
+  <defs>
+    <linearGradient id="grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0d9488" />
+      <stop offset="100%" stop-color="#0f766e" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Rounded Background Badge -->
+  <rect width="64" height="64" rx="16" fill="url(#grad)" />
+  
+  <!-- Stethoscope Outline & Tubing -->
+  <path d="M18 16 V28 C18 36 26 42 32 42 C38 42 46 36 46 28 V16" fill="none" stroke="#ffffff" stroke-width="4.5" stroke-linecap="round" />
+  
+  <!-- Earpieces -->
+  <circle cx="18" cy="16" r="3.5" fill="#ffffff" />
+  <circle cx="46" cy="16" r="3.5" fill="#ffffff" />
+  
+  <!-- Chestpiece Stem & Bell -->
+  <path d="M32 42 V47" fill="none" stroke="#ffffff" stroke-width="4" stroke-linecap="round" />
+  <circle cx="32" cy="51" r="5" fill="#ffffff" />
+  <circle cx="32" cy="51" r="2.5" fill="#0d9488" />
+  
+  <!-- Digital ECG Pulse Waveform in Center -->
+  <path d="M22 28 H26 L29 23 L33 34 L36 26 L38 28 H42" fill="none" stroke="#5eead4" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+</svg>
